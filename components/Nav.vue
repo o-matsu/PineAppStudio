@@ -18,11 +18,12 @@
       </div>
       <div class="flex border-t sm:border-0">
         <div class="flex-1 text-center py-4 sm:py-8 sm:ml-8">Pricing</div>
-        <div
+        <nuxt-link
+          to="contact"
           class="flex-1 text-center py-4 sm:py-8 border-l sm:ml-8 sm:border-0"
         >
           Contact
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </div>
