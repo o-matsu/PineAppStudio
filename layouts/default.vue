@@ -1,14 +1,17 @@
 <template>
   <div>
+    <Nav />
     <Nuxt />
   </div>
 </template>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  /* font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif; */
+  font-family: ABeeZee, Oswald, Kosugi;
+  color: #4f4f4f;
+  font-size: 12px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -17,6 +20,13 @@ html {
   box-sizing: border-box;
 }
 
+div {
+  border-color: #e0e0e0;
+}
+hr {
+  width: 210px;
+  border-color: #e0e0e0;
+}
 *,
 *::before,
 *::after {

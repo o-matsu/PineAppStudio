@@ -34,6 +34,17 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          ABeeZee: true,
+          Oswald: true,
+          Kosugi: true,
+        },
+        display: 'swap',
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -41,4 +52,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  generate: {
+    dir: 'public',
+  },
 }
