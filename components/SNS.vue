@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between mx-32 my-8">
+  <div class="flex justify-between mx-32 my-8 sm:ml-auto sm:mr-10 sm:w-44">
     <a href="https://twitter.com/o_matsu555">
       <img src="~/assets/twitter.svg" />
     </a>

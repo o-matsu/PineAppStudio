@@ -1,7 +1,7 @@
 <template>
   <div class="my-6 w-full flex flex-col items-center">
     <hr />
-    <div class="mt-4">Pine App Studio All rights reserved.</div>
+    <div class="mt-4">&copy; Pine App Studio All rights reserved.</div>
   </div>
 </template>
 
