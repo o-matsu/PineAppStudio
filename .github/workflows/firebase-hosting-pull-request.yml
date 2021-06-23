@@ -37,7 +37,6 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
-      - name: Build & Deployment
       - uses: actions/checkout@v2
       - run: yarn generate
       - uses: FirebaseExtended/action-hosting-deploy@v0
