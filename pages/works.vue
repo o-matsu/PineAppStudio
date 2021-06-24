@@ -49,7 +49,7 @@
               <div class="text-sm mt-1">
                 <p>
                   自分で作った教材、人が作った教材で中国語の音読練習ができる
-                  ウェブ学習サービスを開発。MAU 5.5K、月間17万PV。
+                  ウェブ学習サービスを開発。MAU5.5K／月間17万PV。
                 </p>
                 <p>全国の大学でリモート授業にご活用頂いています。</p>
               </div>
@@ -110,7 +110,7 @@ export default {}
 .card {
   position: relative;
   width: 319px;
-  height: 212px;
+  min-height: 212px;
   left: 0px;
   top: 0px;
 
@@ -126,7 +126,7 @@ img {
 .label {
   position: absolute;
   width: 319px;
-  height: 116px;
+  min-height: 116px;
   left: 0px;
   top: 96px;
 
