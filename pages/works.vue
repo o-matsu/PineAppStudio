@@ -108,13 +108,14 @@ export default {}
   left: 0px;
   top: 0px;
 
-  /* Gray 5 */
-
-  border: 1px solid #e0e0e0;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 0px 10px 10px 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* z-index: 1; */
+}
+img {
+  border-radius: 0px 10px 10px 10px;
 }
 .label {
   position: absolute;
