@@ -100,14 +100,7 @@
 export default {}
 </script>
 
-<style>
-.h1 {
-  font-family: ABeeZee;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-}
+<style scoped>
 .card {
   position: relative;
   width: 319px;
@@ -131,7 +124,7 @@ export default {}
   top: 96px;
 
   background: #e0e0e0;
-  border-radius: 0px 10px 0px 0px;
+  border-radius: 0px 10px 10px 10px;
 }
 .tag {
   padding: 1px 10px 3px 6px;
