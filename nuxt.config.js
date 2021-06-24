@@ -56,7 +56,25 @@ export default {
         display: 'swap',
       },
     ],
-    '@nuxtjs/google-analytics',
+[
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyALtv-oBN98kk0G2n0vJZnNSv9Gb6b-js4',
+          authDomain: 'myhp-pineappstudio.firebaseapp.com',
+          projectId: 'myhp-pineappstudio',
+          storageBucket: 'myhp-pineappstudio.appspot.com',
+          messagingSenderId: '1049431691570',
+          appId: '1:1049431691570:web:129d532825ff5f8529072b',
+          measurementId: 'G-TLQ4XDQJMX',
+        },
+        services: {
+          analytics: {
+            collectionEnabled: true,
+          },
+        },
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -66,8 +84,5 @@ export default {
   build: {},
   generate: {
     dir: 'public',
-  },
-  googleAnalytics: {
-    id: 'G-TLQ4XDQJMX',
   },
 }
