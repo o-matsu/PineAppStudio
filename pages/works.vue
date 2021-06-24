@@ -42,8 +42,9 @@
       <div class="flex flex-col">
         <div class="h2 mt-12 mx-auto">実績</div>
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between">
-          <div class="card mt-8 mx-auto">
-            <img src="~/assets/Ondoku.jpg" class="Ondoku" />
+          <div class="card mt-8 mx-auto ondoku">
+            <!-- <img src="~/assets/Ondoku.jpg" /> -->
+            <div class="card-dummy"></div>
             <div class="label p-4">
               <div class="h3">語学学習のための発音練習システム</div>
               <div class="text-sm mt-1">
@@ -61,13 +62,14 @@
               </div>
             </div>
           </div>
-          <div class="card mt-8 mx-auto">
-            <img src="~/assets/TwitterAutomate.jpg" class="Ondoku" />
+          <div class="card twitter-automate mt-8 mx-auto">
+            <!-- <img src="~/assets/TwitterAutomate.jpg" /> -->
+            <div class="card-dummy"></div>
             <div class="label p-4">
               <div class="h3">Twitter自動運用ツール</div>
               <div class="text-sm mt-1">
                 <p>
-                  自身のツイート内容に関心の高いユーザーを自動抽出し、フォロー・いいねを行うツールを開発。
+                  自身のツイート内容に関心の高いユーザーを自動抽出し、フォロー・いいねを定期実行するツールを開発。
                 </p>
                 <p>運用効果として、毎月100フォロワー増を半年間継続中。</p>
               </div>
@@ -79,8 +81,9 @@
               </div>
             </div>
           </div>
-          <div class="card mt-8 mx-auto">
-            <img src="~/assets/Kochuken.jpg" class="Ondoku" />
+          <div class="card kochuken mt-8 mx-auto">
+            <!-- <img src="~/assets/Kochuken.jpg" /> -->
+            <div class="card-dummy"></div>
             <div class="label p-4">
               <div class="h3">WordPressカスタマイズ</div>
               <div class="text-sm mt-1">
@@ -108,11 +111,11 @@ export default {}
 
 <style scoped>
 .card {
-  position: relative;
+  /* position: relative; */
   width: 319px;
-  min-height: 212px;
-  left: 0px;
-  top: 0px;
+  /* min-height: fit-content; */
+  /* left: 0px;
+  top: 0px; */
 
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -120,13 +123,26 @@ export default {}
   /* overflow: hidden; */
   /* z-index: 1; */
 }
+.card.ondoku {
+  background-image: url('~/assets/Ondoku.jpg');
+}
+.card.twitter-automate {
+  background-image: url('~/assets/TwitterAutomate.jpg');
+}
+.card.kochuken {
+  background-image: url('~/assets/Kochuken.jpg');
+}
+.card-dummy {
+  height: 96px;
+}
+
 img {
   border-radius: 0px 10px 10px 10px;
 }
 .label {
-  position: absolute;
+  /* position: absolute; */
   width: 319px;
-  min-height: 116px;
+  /* min-height: 116px; */
   left: 0px;
   top: 96px;
 
