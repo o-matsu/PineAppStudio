@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <img src="~/assets/IMG_4202_res.png" class="cover-mb sm:hidden" />
+    <img src="~/assets/IMG_4202_res.jpg" class="cover-mb sm:hidden" />
     <img src="~/assets/_5053664-1.JPG" class="cover-pc hidden sm:block" />
     <div class="balloon-wrapper flex flex-col justify-around">
       <div class="balloon ml-8 mr-auto">
@@ -43,9 +43,9 @@ export default {}
   border-radius: 0px 10px 10px 10px;
   padding: 7px 14px;
   color: black;
+  animation: 3s appear;
 }
 @media screen and (min-width: 640px) {
-  /* 960px以上に適用されるCSS（PC用） */
   .balloon-wrapper {
     width: 50%;
   }

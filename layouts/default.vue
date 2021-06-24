@@ -19,13 +19,47 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
+.h1 {
+  font-family: ABeeZee;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+.h1sub {
+  font-family: ABeeZee;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+.h2 {
+  background: #4f4f4f;
+  color: white;
+  border-radius: 0px 20px 20px 20px;
+  padding: 8px 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+.h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
 div {
   border-color: #e0e0e0;
 }
 hr {
   width: 210px;
   border-color: #e0e0e0;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
 }
 *,
 *::before,

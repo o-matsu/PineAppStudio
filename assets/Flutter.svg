@@ -1,0 +1,28 @@
+<svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0)">
+<rect x="5.45007" y="12.3836" width="21.2886" height="16.595" fill="url(#pattern0)"/>
+<path d="M23.9143 13.7632H14.8371L6.89514 21.7069L11.4326 26.2447L23.9143 13.7632Z" fill="#54C5F8"/>
+<path d="M4.62529 19.4374L0.0858154 14.898L14.837 0.146805H23.9142L4.62529 19.4374Z" fill="#54C5F8"/>
+<path d="M11.4325 26.2447L14.837 29.6491H23.9142L15.972 21.7069L11.4325 26.2447Z" fill="#01579B"/>
+<path d="M11.4325 26.2447L18.1644 23.9145L15.972 21.7069L11.4325 26.2447Z" fill="url(#paint0_linear)"/>
+<path d="M11.4326 17.1675L6.89417 21.706L11.4326 26.2445L15.9711 21.706L11.4326 17.1675Z" fill="#29B6F6"/>
+<path d="M23.9142 13.7633L15.972 21.7052L23.9142 29.6492H14.837L11.4325 26.2447L6.89332 21.7052L14.8373 13.763H23.9142V13.7633ZM14.837 0.146805L0.0858154 14.898L4.62529 19.4375L23.9142 0.146805H14.837Z" fill="url(#paint1_radial)"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0"/>
+</pattern>
+<linearGradient id="paint0_linear" x1="12.7566" y1="27.1216" x2="16.1371" y2="23.741" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1A237E" stop-opacity="0.4"/>
+<stop offset="1" stop-color="#1A237E" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.756449 2.15833) scale(36.0944)">
+<stop stop-color="white" stop-opacity="0.1"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0">
+<rect width="24" height="29.7195" fill="white" transform="translate(0 0.0382004)"/>
+</clipPath>
+<image id="image0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAABhCAYAAAD7lK7FAAAACXBIWXMAAAHYAAAB2AH6XKZyAAAA"/>
+</defs>
+</svg>
