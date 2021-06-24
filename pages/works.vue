@@ -47,9 +47,11 @@
             <div class="label p-4">
               <div class="h3">語学学習のための発音練習システム</div>
               <div class="text-sm mt-1">
-                自分で作った教材、人が作った教材で中国語の音読練習ができる
-                ウェブ学習サービスを開発。MAU 5.5K、月間17万PV。
-                全国の大学でリモート授業にご活用頂いています。
+                <p>
+                  自分で作った教材、人が作った教材で中国語の音読練習ができる
+                  ウェブ学習サービスを開発。MAU 5.5K、月間17万PV。
+                </p>
+                <p>全国の大学でリモート授業にご活用頂いています。</p>
               </div>
               <div class="flex mt-2">
                 <div class="tag mr-4"># Vue.js</div>
@@ -64,8 +66,10 @@
             <div class="label p-4">
               <div class="h3">Twitter自動運用ツール</div>
               <div class="text-sm mt-1">
-                自身のツイート内容に関心の高いユーザーを自動抽出し、フォロー・いいねを行うツールを開発。
-                運用効果として、毎月100フォロワー増を半年間継続中。
+                <p>
+                  自身のツイート内容に関心の高いユーザーを自動抽出し、フォロー・いいねを行うツールを開発。
+                </p>
+                <p>運用効果として、毎月100フォロワー増を半年間継続中。</p>
               </div>
               <div class="flex mt-2">
                 <div class="tag mr-4"># Python</div>
@@ -80,8 +84,10 @@
             <div class="label p-4">
               <div class="h3">WordPressカスタマイズ</div>
               <div class="text-sm mt-1">
-                既存のWordpressテーマをカスタマイズして、デザインの調整と独自機能を実装。
-                通常のWordpressにはない、人材の公募機能を追加しました。
+                <p>
+                  既存のWordpressテーマをカスタマイズして、デザインの調整と独自機能を実装。
+                </p>
+                <p>通常のWordpressにはない、人材の公募機能を追加しました。</p>
               </div>
               <div class="flex mt-2">
                 <div class="tag mr-4"># WordPress</div>
