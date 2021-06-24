@@ -109,7 +109,7 @@ export default {}
   line-height: 28px;
 }
 .card {
-  position: static;
+  position: relative;
   width: 319px;
   height: 212px;
   left: 0px;
