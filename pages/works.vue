@@ -22,7 +22,7 @@
         </div>
         <div class="my-4 flex justify-around items-center">
           <img src="~/assets/nuxt.svg" />
-          <img src="~/assets/vue.svg" />
+          <img src="~/assets/Vue.svg" />
           <img src="~/assets/firebase.svg" />
           <img src="~/assets/Laravel.svg" />
           <img src="~/assets/Flutter.svg" />
