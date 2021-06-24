@@ -14,6 +14,7 @@
         </p>
         <p>リモートワークで、全国どちらでも対応いたします。</p>
       </div>
+      <!-- TODO: 問い合わせフォーム作る？ -->
       <div class="flex justify-between w-52 mx-auto my-12">
         <a href="https://twitter.com/o_matsu555">
           <img src="~/assets/twitter_gray.svg"

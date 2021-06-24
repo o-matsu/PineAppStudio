@@ -56,6 +56,7 @@ export default {
         display: 'swap',
       },
     ],
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -65,5 +66,8 @@ export default {
   build: {},
   generate: {
     dir: 'public',
+  },
+  googleAnalytics: {
+    id: 'G-TLQ4XDQJMX',
   },
 }
