@@ -10,7 +10,7 @@ jobs:
   build_and_preview:
     env:
       GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
-      GCLOUD_SERVICE_KEY: ${{ secrets.PROD_GCLOUD_SERVICE_KEY }}
+      GCLOUD_SERVICE_KEY: ${{ secrets.GCLOUD_SERVICE_KEY }}
       FIREBASE_PROJECT_ID: 'myhp-pineappstudio'
     runs-on: ubuntu-latest
     steps:
