@@ -10,27 +10,28 @@
     <div class="menu">
       <div class="flex">
         <nuxt-link
-          to="about"
+          to="/"
           class="flex-1 text-center py-4 sm:py-8"
+          :class="{ isActive: isIndex }"
+        >
+          Home
+        </nuxt-link>
+        <nuxt-link
+          to="about"
+          class="flex-1 text-center py-4 sm:py-8 border-l sm:ml-8 sm:border-0"
           :class="{ isActive: isAbout }"
         >
           About
         </nuxt-link>
+      </div>
+      <div class="flex border-t sm:border-0">
         <nuxt-link
           to="works"
-          class="flex-1 text-center py-4 sm:py-8 border-l sm:ml-8 sm:border-0"
+          class="flex-1 text-center py-4 sm:py-8 sm:ml-8"
           :class="{ isActive: isWorks }"
         >
           Works
         </nuxt-link>
-      </div>
-      <div class="flex border-t sm:border-0">
-        <nuxt-link
-          to="pricing"
-          class="flex-1 text-center py-4 sm:py-8 sm:ml-8"
-          :class="{ isActive: isPricing }"
-          >Pricing</nuxt-link
-        >
         <nuxt-link
           to="contact"
           class="flex-1 text-center py-4 sm:py-8 border-l sm:ml-8 sm:border-0"
@@ -51,6 +52,9 @@ export default {
     }
   },
   computed: {
+    isIndex() {
+      return this.$route.name === 'index'
+    },
     isAbout() {
       return this.$route.name === 'about'
     },
