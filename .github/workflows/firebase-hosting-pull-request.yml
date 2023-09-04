@@ -5,22 +5,36 @@ name: Deploy to Firebase Hosting on PR
 on:
   push:
     branches:
-      - main
       - master
 jobs:
   build_and_preview:
-    # if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+      GCLOUD_SERVICE_KEY: ${{ secrets.PROD_GCLOUD_SERVICE_KEY }}
+      FIREBASE_PROJECT_ID: 'myhp-pineappstudio'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run generate
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+      - name: Set up Node.js 16
+        uses: actions/setup-node@master
         with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN }}'
+          node-version: 16
+      - name: Install packages
+        run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn generate
+      # 認証情報を保持するjsonファイルをGOOGLE_APPLICATION_CREDENTIALSで指定したpassに生成
+      - name: make GOOGLE_APPLICATION_CREDENTIALS
+        run: echo $GCLOUD_SERVICE_KEY | base64 -d > $GOOGLE_APPLICATION_CREDENTIALS
+      - name: install firebase
+        run: npm install --save-dev firebase-tools
+      - name: change environments
+        run: |
+          ./node_modules/.bin/firebase use $FIREBASE_PROJECT_ID
+      - name: deploy to hosting
+        run: |
+          ./node_modules/.bin/firebase deploy --only hosting
+      - name: delete GOOGLE_APPLICATION_CREDENTIALS
+        run: rm $GOOGLE_APPLICATION_CREDENTIALS
+        if: ${{ always() }}
